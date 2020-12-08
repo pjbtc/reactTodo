@@ -8,8 +8,8 @@ const CreateNote=({createNote})=>{
 		e.preventDefault();
 			const data={
 				note,
-				id: Math.floor(Math.random()*1000),
-				date: new Date().toJSON().slice(0,10),
+				id: Math.floor(Math.random()*1000), // returns a random integer between 0 and 999 (both included)  
+				date: new Date().toJSON().slice(0,10), // gives current date 
 				isImportant: false
 			}
 			createNote(data)
